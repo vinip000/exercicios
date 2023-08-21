@@ -24,12 +24,12 @@ int main(){
     float compra;
     cout<< "Digite o valor da compra: "<<endl;
     cin>> compra;
-    if (compra >=100){
-    cout<< "bronze: "<<descontoBronze(compra);
-   }else if (compra>=200){
-    cout<< "Prata: "<< descontoPrata(compra);
+    if (compra<200){
+        cout<< "bronze: "<<descontoBronze(compra);
+   }else if (compra <300){
+        cout<< "Prata: "<< descontoPrata(compra);
    }else{
-    cout<< "Ouro: "<< descontoOuro(compra);
+        cout<< "Ouro: "<< descontoOuro(compra);
    }
     return 0;
 }
